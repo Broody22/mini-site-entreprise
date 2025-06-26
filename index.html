@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Accueil - Mon Entreprise</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Pro</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-  <h1>Bienvenue sur notre site</h1>
-  <p>Présentation de l’entreprise</p>
+  <header>
+    <div class="container">
+      <h1 class="logo">SitePro</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h2>Votre partenaire digital</h2>
+      <p>Créons ensemble des expériences web modernes et professionnelles.</p>
+      <a href="#contact" class="btn">Nous contacter</a>
+    </div>
+  </section>
+  <section id="about" class="section">
+    <div class="container">
+      <h3>À propos</h3>
+      <p>Notre équipe développe des solutions innovantes pour faire croître votre activité en ligne.</p>
+    </div>
+  </section>
+  <section id="services" class="section grey">
+    <div class="container">
+      <h3>Nos Services</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Développement Web</h4>
+          <p>Sites vitrines, e-commerce et applications modernes.</p>
+        </div>
+        <div class="card">
+          <h4>Marketing Digital</h4>
+          <p>Stratégies de communication et réseaux sociaux.</p>
+        </div>
+        <div class="card">
+          <h4>Design UI/UX</h4>
+          <p>Interfaces intuitives et attractives pour vos utilisateurs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <div class="container">
+      <h3>Contactez-nous</h3>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Votre nom" required />
+        <input type="email" id="email" placeholder="Votre email" required />
+        <textarea id="message" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <p id="formMessage" class="hidden"></p>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SitePro. Tous droits réservés.</p>
+    </div>
+  </footer>
   <script src="script.js"></script>
-
 </body>
 </html>
